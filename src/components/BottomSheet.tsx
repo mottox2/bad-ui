@@ -21,16 +21,16 @@ export const BottomSheet: React.FC<{
           {isOpen && (
             <motion.div
               initial={{
-                opacity: 0
+                opacity: 0,
               }}
               animate={{
-                opacity: 1
+                opacity: 1,
               }}
               exit={{
-                opacity: 0
+                opacity: 0,
               }}
               transition={{
-                opacity: { duration: 0.2 }
+                opacity: { duration: 0.2 },
               }}
               onClick={() => requestClose()}
               key="overlay"
@@ -43,23 +43,23 @@ export const BottomSheet: React.FC<{
               drag="y"
               dragConstraints={{
                 top: 0,
-                bottom: 0
+                bottom: 0,
               }}
               initial={{
                 height: 0,
-                opacity: 0
+                opacity: 0,
               }}
               animate={{
                 height: "auto",
-                opacity: 1
+                opacity: 1,
               }}
               exit={{
                 height: 0,
-                opacity: 0
+                opacity: 0,
               }}
               transition={{
                 height: transition,
-                opacity: { duration: 0.2 }
+                opacity: { duration: 0.2 },
               }}
               onDragEnd={(e, info) => {
                 const { offset, velocity } = info;

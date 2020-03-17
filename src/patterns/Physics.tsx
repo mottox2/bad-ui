@@ -74,6 +74,16 @@ export const Physics: React.FC<{
         transition={transitions.goal}>
         <div style={{ padding: "60px 12px" }}>
           それっぽいイージングを指定すると、自然な動きになる。
+          <button
+            tabIndex={0}
+            className={commonStyles.linkButton}
+            style={{ marginTop: 12 }}
+            onClick={() => {
+              toNext();
+              setOpen3(false);
+            }}>
+            次へ進む
+          </button>
         </div>
       </BottomSheet>
     </div>
