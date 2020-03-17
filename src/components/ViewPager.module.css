@@ -1,6 +1,6 @@
 .container {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 44px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
 }
 
 .page {
-  padding: 60px 30px;
+  padding: 12px 12px;
   position: absolute;
   top: 0;
   width: 100vw;

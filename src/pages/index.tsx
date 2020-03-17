@@ -1,11 +1,12 @@
 import { ViewPager, usePager } from "../components/ViewPager";
-import { BadEasing } from "../patterns/BadEasing";
+import { Start } from "../patterns/Start";
 
 import styles from "./index.module.css";
 
 const Home = () => {
   const pagerProps = usePager(5);
   const { paginate } = pagerProps;
+  const toNext = () => paginate(1);
   return (
     <>
       <div className={styles.navigationBar}>
@@ -18,7 +19,7 @@ const Home = () => {
         </button>
       </div>
       <ViewPager {...pagerProps}>
-        <BadEasing />
+        <Start toNext={toNext} />
         <p>Hello Next.js2</p>
         <p>Hello Next.js3</p>
         <p>Hello Next.js4</p>

@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "framer-motion": "^1.9.1",
     "minireset.css": "^0.0.6",
     "next": "9.3.1",

@@ -1,0 +1,32 @@
+.linkText {
+  color: #007aff;
+  padding: 16px;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+
+  appearance: none;
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.body {
+  font-size: 14px;
+  opacity: 0.88;
+}
+
+.linkButton {
+  background-color: #007aff;
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+}
