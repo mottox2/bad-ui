@@ -1,8 +1,11 @@
-import Head from 'next/head'
+import { ViewPager } from '../components/ViewPager'
 
 const Home = () => (
   <div>
-    Hello Next.js
+    <ViewPager>
+      <p>Hello Next.js</p>
+      <p>Hello Next.js</p>
+    </ViewPager>
   </div>
 )
 

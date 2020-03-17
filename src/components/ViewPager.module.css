@@ -1,0 +1,15 @@
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.page {
+  padding: 60px 30px;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
