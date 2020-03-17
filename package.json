@@ -13,10 +13,15 @@
     "minireset.css": "^0.0.6",
     "next": "9.3.1",
     "react": "16.13.0",
-    "react-dom": "16.13.0"
+    "react-dom": "16.13.0",
+    "react-remove-scroll": "^2.2.0"
   },
   "devDependencies": {
     "@types/node": "^13.9.1",
     "typescript": "^3.8.3"
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "trailingComma": "all"
   }
 }

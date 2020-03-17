@@ -23,10 +23,15 @@
 }
 
 .linkButton {
+  appearance: none;
+  border: none;
+  width: 100%;
+  font-size: inherit;
+
   background-color: #007aff;
-  color: white;
   display: block;
   text-align: center;
   line-height: 50px;
   border-radius: 10px;
+  color: white;
 }

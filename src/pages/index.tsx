@@ -1,12 +1,15 @@
 import { ViewPager, usePager } from "../components/ViewPager";
 import { Start } from "../patterns/Start";
+import { Physics } from "../patterns/Physics";
 
 import styles from "./index.module.css";
 
 const Home = () => {
-  const pagerProps = usePager(5);
+  const pagerProps = usePager(5, 1);
   const { paginate } = pagerProps;
   const toNext = () => paginate(1);
+
+  // pageが変わったら、hashつけるやつ
   return (
     <>
       <div className={styles.navigationBar}>
@@ -14,13 +17,17 @@ const Home = () => {
           Prev
         </button>
         <div className={styles.title}>Bad UIs</div>
-        <button className={styles.toNext} onClick={() => paginate(1)}>
+        <button
+          style={{ visibility: "hidden" }}
+          className={styles.toNext}
+          onClick={() => paginate(1)}
+        >
           Next
         </button>
       </div>
       <ViewPager {...pagerProps}>
         <Start toNext={toNext} />
-        <p>Hello Next.js2</p>
+        <Physics toNext={toNext} />
         <p>Hello Next.js3</p>
         <p>Hello Next.js4</p>
         <p>Hello Next.js5</p>
