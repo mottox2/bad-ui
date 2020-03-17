@@ -5,7 +5,7 @@ import { Physics } from "../patterns/Physics";
 import styles from "./index.module.css";
 
 const Home = () => {
-  const pagerProps = usePager(5, 1);
+  const pagerProps = usePager(5, 0);
   const { paginate } = pagerProps;
   const toNext = () => paginate(1);
 
@@ -20,8 +20,7 @@ const Home = () => {
         <button
           style={{ visibility: "hidden" }}
           className={styles.toNext}
-          onClick={() => paginate(1)}
-        >
+          onClick={() => paginate(1)}>
           Next
         </button>
       </div>
