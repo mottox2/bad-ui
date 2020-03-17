@@ -76,7 +76,7 @@ export const ViewPager: React.FC<PagerProps> = ({
             x: { type: "spring", stiffness: 300, damping: 200 },
             opacity: { duration: 0.2 }
           }}
-          drag="x"
+          // drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={1}
           onDragEnd={(e, info) => {

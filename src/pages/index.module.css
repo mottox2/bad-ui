@@ -1,0 +1,28 @@
+.navigationBar {
+  position: abolute;
+  display: flex;
+  height: 44px;
+  align-items: center;
+  padding: 0 16px;
+  background-color: #fafafa;
+}
+
+.toNext {
+  font-size: inherit;
+  appearance: none;
+  border: none;
+  background: transparent;
+}
+
+.toPrev {
+  font-size: inherit;
+  appearance: none;
+  border: none;
+  background: transparent;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+}
