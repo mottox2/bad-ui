@@ -3,7 +3,7 @@
   display: flex;
   height: 44px;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 12px;
   background-color: #fafafa;
 }
 
@@ -25,4 +25,5 @@
   flex: 1;
   text-align: center;
   font-weight: 600;
+  font-size: 18px;
 }
