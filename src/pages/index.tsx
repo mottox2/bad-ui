@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { GitHub } from "react-feather";
 
 import { ViewPager, usePager } from "../components/ViewPager";
 import { Start } from "../patterns/Start";
@@ -48,12 +49,13 @@ const Home = () => {
           Prev
         </button>
         <div className={styles.title}>Bad UIs</div>
-        <button
-          style={{ visibility: "hidden" }}
-          className={styles.toNext}
-          onClick={() => paginate(1)}>
-          Next
-        </button>
+        <a
+          href="https://github.com/mottox2/bad-ui"
+          className={styles.github}
+          target="_blank"
+          rel="noopener">
+          <GitHub color="#000000" />
+        </a>
       </div>
       <ViewPager {...pagerProps}>
         <Start toNext={toNext} />

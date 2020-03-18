@@ -7,11 +7,15 @@
   background-color: #fafafa;
 }
 
-.toNext {
+.github {
   font-size: inherit;
   appearance: none;
   border: none;
   background: transparent;
+  position: relative;
+  top: 2px;
+  width: 46px;
+  text-align: center;
 }
 
 .toPrev {

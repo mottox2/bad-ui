@@ -1,3 +1,8 @@
+html {
+  /* iPhoneのダブルタップによるズームを抑制 */
+  touch-action: manipulation;
+}
+
 body {
   /* https://ics.media/entry/200317/ */
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
