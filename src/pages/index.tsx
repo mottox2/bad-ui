@@ -41,6 +41,7 @@ const Home = () => {
           key="twitter:card"
         />
         <meta name="twitter:creator" content="@mottox2" key="twitter:creater" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <div className={styles.navigationBar}>
         <button className={styles.toPrev} onClick={() => paginate(-1)}>

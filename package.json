@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build; next export",
     "start": "next start"
   },
   "dependencies": {
@@ -12,6 +12,7 @@
     "framer-motion": "^1.9.1",
     "minireset.css": "^0.0.6",
     "next": "9.3.1",
+    "next-pwa": "^2.3.1",
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "react-remove-scroll": "^2.2.0"
