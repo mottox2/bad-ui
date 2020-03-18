@@ -8,7 +8,7 @@ import { SlowAd } from "../patterns/SlowAd";
 import styles from "./index.module.css";
 
 const Home = () => {
-  const pagerProps = usePager(5, 2);
+  const pagerProps = usePager(5, 0);
   const { paginate } = pagerProps;
   const toNext = () => paginate(1);
 
@@ -57,7 +57,7 @@ const Home = () => {
       <ViewPager {...pagerProps}>
         <Start toNext={toNext} />
         <Physics toNext={toNext} />
-        <p>Hello Next.js3</p>
+        <SlowAd toNext={toNext} />
         <p>Hello Next.js4</p>
         <p>Hello Next.js5</p>
       </ViewPager>
